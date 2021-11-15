@@ -80,22 +80,55 @@ body {
     margin-left: 10px;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
+/* -------------------------------------------- */
 
 /* Notification Tab */
 .notification-tab {
-    height: 150px;
-    opacity: 0.7;
+    height: 125px;
     background-color: cadetblue;
 }
+
+.notification-cont {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.notification-logo {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.text-notification {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+#underlinetext {
+    text-decoration: underline;
+    color: grey;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Input Search chat */
 .search-chat {
