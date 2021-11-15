@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
     height: 100vh;
 }
@@ -26,9 +30,65 @@
 
 /* User name */
 .user-name {
+    display: flex;
     height: 100px;
-    background-color: grey;
+    background-color: brown;
 }
+
+.left-user-name {
+    width: 50%;
+    height: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.right-user-name {
+    width: 50%;
+    height: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.image {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.image > img {
+    height: 80%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.name-user {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px
+}
+
+.icon-default-grey {
+    color: grey;
+    font-size: 20px;
+}
+
+.icon-default-grey > i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
 
 /* Notification Tab */
 .notification-tab {
