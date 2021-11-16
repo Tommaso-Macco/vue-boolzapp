@@ -22,7 +22,7 @@ body {
 
 /* LEFT CONT */
 .leftcont {
-    width: 40%;
+    width: 30%;
     height: 100%;
     /* DEBUG */
     background-color: black;
@@ -134,7 +134,24 @@ body {
 /* Input Search chat */
 .search-chat {
     height: 75px;
-    background-color: red;
+    background-color: #fafafa;
+}
+
+.inputcontainer {
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.inputstyle {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url('https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-2.png');
+    background-size: 20px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
 }
 
 /* Box message */
@@ -160,7 +177,7 @@ body {
     opacity: 0.5;
 }
 
-.box-message .image > img {
+.image > img {
     height: 100%;
     border-radius: 100%;
 }
@@ -183,7 +200,7 @@ body {
 
 /* RIGHT CONT */
 .rightcont {
-    width: 60%;
+    width: 70%;
     height: 100%;
     /* DEBUG */
     background-color: blue;
@@ -191,18 +208,84 @@ body {
 
 /* Message profile user */
 .message-profile-user {
+    display: flex;
+    align-items: center;
     height: 100px;
     background-color: #eaeaea;
     border-left: 1px solid grey;
+    padding: 15px;
 }
+
+.rightside-contact {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.leftside-contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
 
 /* Main Message CHAT */
 .main-message {
     height: calc(100% - 200px);
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
 }
+
+.container-message {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.list-message-sent {
+    width: 50%;
+}
+
+.list-message-recive  {
+    width: 50%;
+}
+
+.message {
+    min-height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.message-sent {
+    background-color: green;
+}
+
+.message-recive {
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
 
 /* New Message Input */
 .new-message-input {
     height: 100px;
-    background-color: gold;
+    background-color: #f3eeea;
 }
