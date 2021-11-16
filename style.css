@@ -117,7 +117,7 @@ body {
 #underlinetext {
     text-decoration: underline;
     color: grey;
-    font-size: 12px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -140,7 +140,7 @@ body {
 /* Box message */
 .all-chat-list {
     height: calc(100% - 300px);
-    background-color: crimson;
+    background-color: #ffffff;
 }
 
 .box-message {
