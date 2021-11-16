@@ -20,10 +20,10 @@
                     <!-- User Name -->
                     <div class="left-user-name">
                         <div class="image">
-                            <img src="img/avatar_io.jpg" alt="">
+                            <img src="img/avatar_4.jpg" alt="">
                         </div>
                         <span class="name-user">
-                            Nome Utente
+                            Tommaso Macco
                         </span>
                     </div>
                     <div class="right-user-name">
@@ -67,10 +67,22 @@
                     <!-- Input Search New Chat -->
                     Search Chat
                 </div>
+
+
                 <div class="all-chat-list">
                     <!-- All The Chat -->
-                    <div class="box-message">
-
+                    <div class="box-message" v-for="contact, i in contacts" v-key="i">
+                        <div class="image">
+                            <img :src="contact.avatar" :alt="contact.name">
+                        </div>
+                        <span class="text-notification">
+                            <strong class="name-contact">{{contact.name}}</strong>
+                            <br>
+                            <span class="lastmessage">{{contact.messages[contact.messages.length -1].text}}</span>
+                        </span>
+                        <!-- <span class="last-join lastmessage">
+                            {{contact.messages[contact.messages.length -1].date}}
+                        </span> -->
                     </div>
            </div>
            <!-- --------------------------------------------------------------- -->

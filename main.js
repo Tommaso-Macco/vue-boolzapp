@@ -9,7 +9,7 @@ var app = new Vue({
           messages: [
             {
               date: "10/01/2020 15:30:55",
-              text: "Hai portato a spasso il cane?",
+              text: "Hai portato a spasso il cane?...",
               status: "sent",
             }
           ]
@@ -21,7 +21,7 @@ var app = new Vue({
           messages: [
             {
               date: "10/01/2020 15:30:55",
-              text: "Hai portato a spasso il cane?",
+              text: "Come va?...",
               status: "sent",
             }
           ]
@@ -33,19 +33,19 @@ var app = new Vue({
           messages: [
             {
               date: "10/01/2020 15:30:55",
-              text: "Hai portato a spasso il cane?",
+              text: "Ciaooo usciamo sta sera?...",
               status: "sent",
             }
           ]
         },
         {
           name: "Luisa",
-          avatar: "img/avatar_4.jpg",
+          avatar: "img/avatar_io.jpg",
           visible: "true",
           messages: [
             {
               date: "10/01/2020 15:30:55",
-              text: "Hai portato a spasso il cane?",
+              text: "Hai fatto la spesa?...",
               status: "sent",
             }
           ]
