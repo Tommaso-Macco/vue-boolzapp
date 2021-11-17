@@ -113,10 +113,7 @@
                    <!-- Message Chat -->
                    <div class="container-message">
                         <div class="message-box">
-                            <div v-for="message in contacts[activeContact].messages" class="message-chat sent">
-                                {{message.text}}
-                            </div>
-                            <div v-for="message in contacts[activeContact].messages" class="message-chat recive">
+                            <div v-for="message in contacts[activeContact].messages" :class="message.status" class="message-chat">
                                 {{message.text}}
                             </div>
                         </div>
