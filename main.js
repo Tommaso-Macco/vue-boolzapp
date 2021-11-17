@@ -10,7 +10,7 @@ var app = new Vue({
             {
               date: "10/01/2020 15:30:55",
               text: "Hai portato a spasso il cane?...",
-              status: "sent",
+              status: "recive",
             }
           ]
         },
@@ -46,12 +46,18 @@ var app = new Vue({
             {
               date: "10/01/2020 15:30:55",
               text: "Hai fatto la spesa?...",
-              status: "sent",
+              status: "recive",
             }
           ]
         },
-      ]
+      ],
+      activeContact: 0,
     },
+    methods: {
+      activeNow(index) {
+        this.activeContact = index;
+      },
+    }
   });
 
   

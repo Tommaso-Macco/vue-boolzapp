@@ -170,6 +170,7 @@ body {
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+    cursor: pointer;
 }
 
 .box-message:hover {
@@ -249,34 +250,33 @@ body {
     width: 80%;
     height: 100%;
     margin: 0 auto;
+}
+
+.message-box {
     display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
-.list-message-sent {
-    width: 50%;
-}
-
-.list-message-recive  {
-    width: 50%;
-}
-
-.message {
-    min-height: 50px;
-    border-radius: 12px;
+.message-chat {
+    max-width: 30%;
+    min-width: 40%;
+    min-height: 60px;
+    border-radius: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
-.message-sent {
-    background-color: green;
+.sent {
+    background-color: #d5f9ba;
+    align-self: flex-end;
 }
 
-.message-recive {
+.recive {
     background-color: #fff;
 }
-
-
-
 
 
 

@@ -69,11 +69,9 @@
                         <input class="inputstyle" type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
                 </div>
-
-
                 <div class="all-chat-list">
                     <!-- All The Chat -->
-                    <div class="box-message" v-for="contact, i in contacts" v-key="i">
+                    <div class="box-message" v-for="contact, i in contacts" :key="i" @click="activeNow(i)">
                         <div class="image">
                             <img :src="contact.avatar" :alt="contact.name">
                         </div>
@@ -92,12 +90,12 @@
                    <!-- Message Profile User -->
                     <div class="rightside-contact">
                         <div class="image">
-                            <img src="img/avatar_2.jpg" alt="">
+                            <img :src="contacts[activeContact].avatar" :alt="contacts[activeContact].name">
                         </div>
                         <span class="text-notification">
-                             <strong class="name-contact">dsds</strong>
+                             <strong class="name-contact">{{contacts[activeContact].name}}</strong>
                              <br>
-                             <span class="lastmessage">dsds</span>
+                             <span class="lastmessage">{{<!-- DA INSERIRE CODICE PER LA DATA -->}}</span>
                          </span>
      
                     </div>
@@ -110,33 +108,18 @@
                     </div>
 
 
-
-
-
-
-
-
-
-
-
-
                </div>
                <div class="main-message">
                    <!-- Message Chat -->
                    <div class="container-message">
-                        <div class="list-message-sent">
-                            <div class="message message-sent">
-                                Ciao tutto bene?
+                        <div class="message-box">
+                            <div v-for="message in contacts[activeContact].messages" class="message-chat sent">
+                                {{message.text}}
+                            </div>
+                            <div v-for="message in contacts[activeContact].messages" class="message-chat recive">
+                                {{message.text}}
                             </div>
                         </div>
-                        <div class="list-message-recive">
-                            <div class="message message-recive">
-                                Si!
-                            </div>
-                        </div>
-
-
-
                    </div>
 
 
