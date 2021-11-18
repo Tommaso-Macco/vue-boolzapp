@@ -79,6 +79,7 @@
                             <strong class="name-contact">{{contact.name}}</strong>
                             <br>
                             <span class="lastmessage">{{contact.messages[contact.messages.length -1].text}}</span>
+                            <span class="lastlogin lastmessage">{{contacts[activeContact].messages[0].date}}</span>
                         </span>
                     </div>
                 </div>
@@ -95,7 +96,7 @@
                         <span class="text-notification">
                              <strong class="name-contact">{{contacts[activeContact].name}}</strong>
                              <br>
-                             <span class="lastmessage">{{<!-- DA INSERIRE CODICE PER LA DATA -->}}</span>
+                             <span class="lastmessage">{{contacts[activeContact].messages[0].date}}</span>
                          </span>
      
                     </div>
@@ -115,6 +116,7 @@
                         <div class="message-box">
                             <div v-for="message in contacts[activeContact].messages" :class="message.status" class="message-chat">
                                 {{message.text}}
+                                <span class="datemessage lastmessage">{{message.date}}</span>
                             </div>
                         </div>
                    </div>
