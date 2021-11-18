@@ -126,7 +126,21 @@
                </div>
                <div class="new-message-input">
                    <!-- Input New Message -->
-                   INPUT NEW MESSAGE
+                   <div class="leftinput inputside">
+                        <div class="icon-last-bar">
+                            <i class="far fa-laugh-beam"></i>
+                        </div>
+                   </div>
+                   <div class="centerinput">
+                        <div class="inputcontainer">
+                            <input v-model="newMessage" class="stylenewmessage" type="text" @keyup.enter="sendNewMessage" placeholder="Scrivi un messaggio">
+                        </div>
+                   </div>
+                   <div class="rightinput inputside">
+                        <div class="icon-last-bar">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                   </div>
                </div>
            </div>
        </div>

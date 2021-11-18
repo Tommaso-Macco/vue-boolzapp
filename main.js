@@ -56,11 +56,30 @@ var app = new Vue({
           ]
         },
       ],
+      newMessage: "",
       activeContact: 0,
     },
     methods: {
       activeNow(index) {
         this.activeContact = index;
+      },
+      sendNewMessage () {
+          let contactNow = this.contacts[this.activeContact];
+          contactNow.messages.push({
+            date: "20/20/2020 20:20:20",
+            text: this.newMessage,
+            status: "sent",
+          });
+            this.newMessage = "";
+
+          // risposta dopo 1 secondo(alemno) di timer
+          setTimeout(() => {
+            contactNow.messages.push({
+              date: "20/20/2020 20:21:20",
+              text: "Ok",
+              status: "recive"
+            });
+          }, 1000);
       },
     }
   });
