@@ -64,6 +64,7 @@ body {
 .user-name .image > img {
     height: 100%;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .name-user {

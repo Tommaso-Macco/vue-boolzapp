@@ -58,6 +58,7 @@ var app = new Vue({
       ],
       newMessage: "",
       activeContact: 0,
+      searchContact: "",
     },
     methods: {
       activeNow(index) {

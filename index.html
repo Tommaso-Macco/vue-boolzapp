@@ -66,7 +66,7 @@
                 <div class="search-chat">
                     <!-- Input Search New Chat -->
                     <div class="inputcontainer">
-                        <input class="inputstyle" type="text" placeholder="Cerca o inizia una nuova chat">
+                        <input class="inputstyle" type="text" v-model="searchContact" placeholder="Cerca o inizia una nuova chat">
                     </div>
                 </div>
                 <div class="all-chat-list">
@@ -96,7 +96,7 @@
                         <span class="text-notification">
                              <strong class="name-contact">{{contacts[activeContact].name}}</strong>
                              <br>
-                             <span class="lastmessage">{{contacts[activeContact].messages[0].date}}</span>
+                             <span class="lastmessage">Ultimo accesso alle: {{contacts[activeContact].messages[0].date}}</span>
                          </span>
      
                     </div>
